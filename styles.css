@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container{
+    width:100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav-inner{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+.image{
+    width:180px;
+    height:92px;
+    border-radius:50%;
+}
+.links ul{
+    display: flex;
+
+}
+.links ul li{
+    list-style: none;
+    margin-right: 60px;
+    padding-top: 40px;
+    color:#1B1464;
+   font-family: 'Orelega One', cursive;
+   letter-spacing: 2px;
+
+}
+.ABOUTUS{
+    height:600px;
+    margin-top: 30px;
+    padding: 100px;
+    background-color: #7d5fff;
+    color: #ffffff;
+}
+.ABOUTUS-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-us-content{
+    text-align: center; 
+}
+.about-us-content p{
+    line-height: 1.6;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  /*background:url('images/vision.jpg'),linear-gradient(#eb01a5, #d13531);*/
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),url('images/vision.jpg');
+
+  background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+   color:#ffffff;
+    
+}
+.flip-box-front  h2{
+   font-family: 'Coda Caption', sans-serif;
+   letter-spacing: 2px;
+    padding-top: 80px;
+    font-size: 72px;
+    padding-bottom: 30px;
+}
+
+.button{
+    fill: #000000;
+    color: #000000;
+    background-color: #FEC006;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;  
+    font-size: 18px;
+    padding: 20px 40px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/* Style the back side */
+.flip-box-back {
+  background-color: #273c75;
+  color: white;
+  transform: rotateY(180deg);
+}
+.about-us-content-two p{
+    padding: 160px;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.mission{
+height:400px;
+    padding: 100px;
+    background-color: #7d5fff;
+    color: #ffffff;
+}
+.mission-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mission-content p{
+
+     line-height: 1.6;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
